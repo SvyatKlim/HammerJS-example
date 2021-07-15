@@ -208,6 +208,7 @@
                 // find what eventtypes we add listeners to
                 Hammer.event.determineEventTypes();
 
+
                 // Register all gestures inside Hammer.gestures
                 for (var name in Hammer.gestures) {
                     if (Hammer.gestures.hasOwnProperty(name)) {
@@ -1763,7 +1764,7 @@
 
 
             function handleHammer(ev) {
-                console.log(ev);
+              alert(ev.type)
                 // disable browser scrolling
                 ev.gesture.preventDefault();
 
